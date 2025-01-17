@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Feedback Management System</h1>
+        
+        <h2>Create a Survey</h2>
+        <form id="surveyForm">
+            <input type="text" id="title" placeholder="Survey Title" required>
+            <textarea id="questions" placeholder="Enter questions (comma separated)" required></textarea>
+            <input type="date" id="start_date" required>
+            <input type="date" id="end_date" required>
+            <button type="submit">Create Survey</button>
+        </form>
+
+        <h2>Submit a Response</h2>
+        <form id="responseForm">
+            <input type="text" id="survey_id" placeholder="Survey ID" required>
+            <textarea id="answers" placeholder="Enter answers (comma separated)" required></textarea>
+            <button type="submit">Submit Response</button>
+        </form>
+
+        <div id="message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
